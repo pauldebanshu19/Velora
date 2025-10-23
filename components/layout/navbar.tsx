@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { Zap } from "lucide-react"
+import { WalletConnect } from "@/components/wallet-connect"
 
 export function Navbar() {
   return (
@@ -30,9 +31,7 @@ export function Navbar() {
             </Link>
           </div>
 
-          <button className="px-6 py-2 bg-gradient-to-r from-primary to-secondary rounded-2xl text-white font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 neon-glow">
-            Sign in with Farcaster
-          </button>
+          <WalletConnect />
         </div>
       </div>
     </nav>

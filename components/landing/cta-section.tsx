@@ -1,5 +1,7 @@
 "use client"
 
+import { WalletConnect } from "@/components/wallet-connect"
+
 export function CTASection() {
   return (
     <section className="py-20 px-4 bg-gradient-to-b from-background to-card/30">
@@ -11,9 +13,7 @@ export function CTASection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-gradient-to-r from-primary to-secondary rounded-2xl text-white font-bold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 neon-glow">
-              Sign in with Farcaster
-            </button>
+            <WalletConnect />
             <button className="px-8 py-4 border-2 border-accent rounded-2xl text-accent font-bold hover:bg-accent/10 transition-all duration-300">
               Learn More
             </button>

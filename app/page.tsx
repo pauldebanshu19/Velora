@@ -7,7 +7,6 @@ import { HeroSection } from "@/components/landing/hero-section"
 import { StatsSection } from "@/components/landing/stats-section"
 import { FeaturesSection } from "@/components/landing/features-section"
 import { CTASection } from "@/components/landing/cta-section"
-import { WalletConnect } from "@/components/wallet-connect";
 
 
 export default function Home() {
@@ -21,15 +20,13 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-background">
-      <div>
-        <WalletConnect />
+
       <Navbar />
       <div className="pt-16">
         <HeroSection />
         <StatsSection />
         <FeaturesSection />
         <CTASection />
-      </div>
       </div>
       <Footer />
     </main>
